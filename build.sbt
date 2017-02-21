@@ -7,6 +7,10 @@ scalaVersion := "2.11.8"
 organization := "com.jxjxgo.common"
 
 resolvers += "alfresco-repo" at "https://artifacts.alfresco.com/nexus/content/repositories/public"
+//resolvers += "3rdparty-repo" at "https://maven.atlassian.com/3rdparty"
+
+// https://mvnrepository.com/artifact/postgresql/postgresql
+//libraryDependencies += "postgresql" % "postgresql" % "9.4.1208-jdbc42-atlassian-hosted" from "https://maven.atlassian.com/3rdparty/postgresql/postgresql/9.4.1208-jdbc42-atlassian-hosted/postgresql-9.4.1208-jdbc42-atlassian-hosted.jar"
 
 libraryDependencies ++= Seq(
   "postgresql" % "postgresql" % "9.2-1002.jdbc4",
