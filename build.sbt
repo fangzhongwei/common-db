@@ -2,7 +2,7 @@ name := "common-db"
 
 version := "1.0"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.12.1"
 
 organization := "com.jxjxgo.common"
 
@@ -14,8 +14,11 @@ resolvers += "alfresco-repo" at "https://artifacts.alfresco.com/nexus/content/re
 
 libraryDependencies ++= Seq(
   "postgresql" % "postgresql" % "9.2-1002.jdbc4",
-  "com.typesafe.slick" %% "slick-hikaricp" % "3.2.0-M2",
+  "com.typesafe.slick" % "slick-hikaricp_2.12" % "3.2.0",
   "ch.qos.logback" % "logback-classic" % "1.1.7",
-  "com.typesafe.slick" %% "slick" % "3.2.0-M2",
-  "com.typesafe.slick" % "slick-codegen_2.11" % "3.2.0-M2" % "test"
+  "com.typesafe.slick" % "slick_2.12" % "3.2.0",
+  "com.typesafe.slick" % "slick-codegen_2.12" % "3.2.0" % "test"
 )
+
+// https://mvnrepository.com/artifact/com.typesafe.slick/slick_2.12
+//libraryDependencies += "com.typesafe.slick" % "slick_2.12" % "3.2.0"
