@@ -1,6 +1,6 @@
 name := "common-db"
 
-version := "1.2"
+version := "1.3"
 
 scalaVersion := "2.12.1"
 
@@ -14,7 +14,7 @@ resolvers += "alfresco-repo" at "https://artifacts.alfresco.com/nexus/content/re
 //libraryDependencies += "postgresql" % "postgresql" % "9.4.1208-jdbc42-atlassian-hosted" from "https://maven.atlassian.com/3rdparty/postgresql/postgresql/9.4.1208-jdbc42-atlassian-hosted/postgresql-9.4.1208-jdbc42-atlassian-hosted.jar"
 
 libraryDependencies ++= Seq(
-  "postgresql" % "postgresql" % "9.2-1002.jdbc4",
+  "org.postgresql" % "postgresql" % "42.1.4",
 //  "postgresql" % "postgresql" % "9.3-1102.jdbc41" from "http://clojars.org/repo/postgresql/postgresql/9.3-1102.jdbc41/postgresql-9.3-1102.jdbc41.jar",
   "com.typesafe.slick" % "slick-hikaricp_2.12" % "3.2.0",
   "ch.qos.logback" % "logback-classic" % "1.1.7",
